@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">"EPGP "</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_subjects">Subjects</string>
+    <string name="title_activity_subdetails">subdetails</string>
+    <string name="title_activity_team">team</string>
+    <string name="title_activity_syllabus">Syllabus</string>
+    <string name="title_activity_syll_details">syllDetails</string>
+    <string name="title_activity_team_paper_coordinaters_and_writers">
+        TeamPaperCoordinatersAndWriters
+    </string>
+    <string name="title_activity_static_module_details">StaticModuleDetails</string>
+    <string name="title_activity_four_module_details">FourModuleDetails</string>
+    <string name="title_activity_static_module_load">staticModuleLoad</string>
+    <string name="title_activity_four_module_load">fourModuleLoad</string>
+    <string name="title_activity_statistics">Statistics</string>
+</resources>

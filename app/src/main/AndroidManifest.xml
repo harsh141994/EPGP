@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.epgp.inflibnet.epgp" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/epgplogo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".First"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Subjects"
+            android:label="@string/title_activity_subjects"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".subdetails"
+            android:label="@string/title_activity_subdetails"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".team"
+            android:label="@string/title_activity_team"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Syllabus"
+            android:label="@string/title_activity_syllabus"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".syllDetails"
+            android:label="@string/title_activity_syll_details"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".TeamPaperCoordinatersAndWriters"
+            android:label="@string/title_activity_team_paper_coordinaters_and_writers"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".StaticModuleDetails"
+            android:label="@string/title_activity_static_module_details"
+            android:parentActivityName=".subdetails"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgp.inflibnet.epgp.subdetails" />
+        </activity>
+        <activity
+            android:name=".FourModuleDetails"
+            android:label="@string/title_activity_four_module_details"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".staticModuleLoad"
+            android:label="@string/title_activity_static_module_load"
+            android:parentActivityName=".StaticModuleDetails" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgp.inflibnet.epgp.StaticModuleDetails" />
+        </activity>
+        <activity
+            android:name=".fourModuleLoad"
+            android:label="@string/title_activity_four_module_load"
+            android:parentActivityName=".FourModuleDetails" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgp.inflibnet.epgp.FourModuleDetails" />
+        </activity>
+        <activity
+            android:name=".Statistics"
+            android:label="@string/title_activity_statistics"
+            android:parentActivityName=".subdetails" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.epgp.inflibnet.epgp.subdetails" />
+        </activity>
+    </application>
+
+</manifest>

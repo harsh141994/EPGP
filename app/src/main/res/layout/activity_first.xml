@@ -1,0 +1,206 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".First">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        >
+
+
+
+        <ImageView
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+
+            android:id="@+id/imageView1"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/phatshalalogo" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/mhrdlogo"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A Gateway to Post Graduate Courses"
+            android:textColor="#000000"
+            android:textSize="11dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginTop="8dp"
+        android:background="#29A9D2"
+        android:orientation="vertical"
+        >
+        <ViewFlipper
+            android:id="@+id/flipper1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:flipInterval="3000"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:inAnimation="@anim/slide_in_right"
+            android:outAnimation="@anim/slide_out_left"
+            android:layout_centerInParent="true" >
+
+            <ImageView
+                android:src="@drawable/e1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:src="@drawable/e2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:src="@drawable/e3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal" />
+
+            <ImageView
+                android:src="@drawable/e4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal" />
+
+
+
+        </ViewFlipper>
+        </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:id="@+id/textView15"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:textColor="#29A9D2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The MHRD, under its National Mission on Education through ICT (NME-ICT), has assigned work to the UGC for development of e-content in 71 subjects at postgraduate level. The content and its quality is the key component of education system.  High quality, curriculum-based,interactive content in different subjects across all disciplines of social sciences, arts, fine arts &amp; humanities, natural &amp; mathematical sciences, linguistics and languages is being develope under this initiative named e-PG Pathshala."
+            android:id="@+id/textView16"
+            android:layout_marginTop="7dp"
+            android:textColor="#444444"
+            android:singleLine="false" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            >
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:id="@+id/btnlogin"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:textSize="20sp"
+                android:background="#abaaaa"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Subjects"
+                android:id="@+id/btnsub"
+                android:textSize="20sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="#ffffff"
+                android:background="#29A9D2" />
+    </LinearLayout>
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>
